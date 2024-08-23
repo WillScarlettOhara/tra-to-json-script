@@ -15,42 +15,50 @@ def parse_tra_file(file_path, encoding="utf-8"):
     """Parses a .tra file and returns a dictionary with the index as key
     and the text as value."""
     tra_translations = {}
-    with open(file_path, "r", encoding=encoding) as file:
-        # Read the entire file content
-        file_content = file.read()
+    try:
+        with open(file_path, "r", encoding=encoding) as file:
+            # Read the entire file content
+            file_content = file.read()
 
-        # Match all index lines and their text
-        matches = re.findall(r"@(\d+)\s*=\s*~(.*?)~", file_content, re.DOTALL)
-        for match in matches:
-            tra_translations[match[0]] = escape_quotes(match[1])
-
+            # Match all index lines and their text
+            matches = re.findall(r"@(\d+)\s*=\s*~(.*?)~", file_content, re.DOTALL)
+            for match in matches:
+                tra_translations[match[0]] = escape_quotes(match[1])
+    except FileNotFoundError:
+        print(f"Error: File not found: {file_path}")
+    except UnicodeDecodeError:
+        print(f"Error: Unable to decode file {file_path} with encoding {encoding}")
     return tra_translations
 
 def parse_po_file(file_path, encoding="utf-8"):
     """Parses a .po file and returns a dictionary with the msgctxt as key
     and msgstr as value."""
     po_translations = {}
-    with open(file_path, "r", encoding=encoding) as file:
-        current_key = None
-        for line in file:
-            line = line.strip()
+    try:
+        with open(file_path, "r", encoding=encoding) as file:
+            current_key = None
+            for line in file:
+                line = line.strip()
 
-            if "msgctxt" in line:
-                match = re.match(r'msgctxt "(.*)"', line)
-                if match:
-                    current_key = match.group(1)
-                    po_translations[current_key] = {"msgid": "", "msgstr": ""}
-            elif "msgid" in line:
-                match = re.match(r'msgid "(.*)"', line)
-                if match:
-                    # Do not escape if already escaped
-                    po_translations[current_key]["msgid"] = match.group(1).replace('\\"', '"')
-            elif "msgstr" in line:
-                match = re.match(r'msgstr "(.*)"', line)
-                if match:
-                    # Do not escape if already escaped
-                    po_translations[current_key]["msgstr"] = match.group(1).replace('\\"', '"')
-
+                if "msgctxt" in line:
+                    match = re.match(r'msgctxt "(.*)"', line)
+                    if match:
+                        current_key = match.group(1)
+                        po_translations[current_key] = {"msgid": "", "msgstr": ""}
+                elif "msgid" in line:
+                    match = re.match(r'msgid "(.*)"', line)
+                    if match:
+                        # Do not escape if already escaped
+                        po_translations[current_key]["msgid"] = match.group(1).replace('\\"', '"')
+                elif "msgstr" in line:
+                    match = re.match(r'msgstr "(.*)"', line)
+                    if match:
+                        # Do not escape if already escaped
+                        po_translations[current_key]["msgstr"] = match.group(1).replace('\\"', '"')
+    except FileNotFoundError:
+        print(f"Error: File not found: {file_path}")
+    except UnicodeDecodeError:
+        print(f"Error: Unable to decode file {file_path} with encoding {encoding}")
     return po_translations
 
 # -----------------------------------------------------------------------------
@@ -79,22 +87,32 @@ def tra_to_po(base_name):
     except FileNotFoundError:
         print(f"Error: French file not found: {french_file_path}")
         return
+    except UnicodeDecodeError:
+        print(f"Error: Unable to decode French file: {french_file_path}")
+        return
 
     # Parse .tra files
     english_translations = parse_tra_file(english_file_path)
     french_translations = parse_tra_file(french_file_path, encoding="utf-8")
 
     # Create the .po file
-    with open(po_file_path, "w", encoding="utf-8") as po_file:
-        po_file.write("# Translations for " + base_name + "\n\n")
+    try:
+        with open(po_file_path, "w", encoding="utf-8") as po_file:
+            po_file.write("# Translations for " + base_name + "\n\n")
 
-        # Iterate over English translations
-        for key, english_text in english_translations.items():
-            french_text = french_translations.get(key, "")
+            # Iterate over English translations
+            for key, english_text in english_translations.items():
+                french_text = french_translations.get(key, "")
 
-            po_file.write(f'msgctxt "{key}"\n')
-            po_file.write(f'msgid "{english_text}"\n')
-            po_file.write(f'msgstr "{french_text}"\n\n')
+                po_file.write(f'msgctxt "{key}"\n')
+                po_file.write(f'msgid "{english_text}"\n')
+                po_file.write(f'msgstr "{french_text}"\n\n')
+    except FileNotFoundError:
+        print(f"Error: Could not create .po file: {po_file_path}")
+        return
+    except UnicodeEncodeError:
+        print(f"Error: Unable to write to .po file: {po_file_path}")
+        return
 
     print(f"Conversion to {po_file_path} completed successfully.")
 
@@ -107,19 +125,31 @@ def po_to_tra(base_name):
     # Parse .po file
     po_translations = parse_po_file(po_file_path)
 
+    # Vérifiez si po_translations est vide (fichier non trouvé)
+    if not po_translations:
+        print(f"Error: .po file not found: {po_file_path}")
+        return
+
     # Create the .tra file (UTF-8 encoding by default)
-    with open(output_file, "w", encoding="utf-8") as tra_file:
-        for key, value in po_translations.items():
-            french_text = value.get("msgstr", "")
+    try:
+        with open(output_file, "w", encoding="utf-8") as tra_file:
+            for key, value in po_translations.items():
+                french_text = value.get("msgstr", "")
 
-            # Remove unnecessary escaping
-            tra_file.write(f"@{key} = ~{french_text}~\n")  
+                # Remove unnecessary escaping
+                tra_file.write(f"@{key} = ~{french_text}~\n")  
 
-    # Convert to Windows-1252
-    with open(output_file, "r", encoding="utf-8") as tra_file:
-        french_content = tra_file.read()
-    with open(output_file, "w", encoding="windows-1252") as tra_file:
-        tra_file.write(french_content)
+        # Convert to Windows-1252
+        with open(output_file, "r", encoding="utf-8") as tra_file:
+            french_content = tra_file.read()
+        with open(output_file, "w", encoding="windows-1252") as tra_file:
+            tra_file.write(french_content)
+    except FileNotFoundError:
+        print(f"Error: Could not create .tra file: {output_file}")
+        return
+    except UnicodeEncodeError:
+        print(f"Error: Unable to write to .tra file: {output_file}")
+        return
 
     print(f"Conversion to {output_file} completed successfully.")
 

@@ -1,20 +1,8 @@
-msgid ""
-msgstr ""
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Crowdin-Project: iwd2ee\n"
-"X-Crowdin-Project-ID: 708261\n"
-"X-Crowdin-Language: fr\n"
-"X-Crowdin-File: more_persuasion_options.po\n"
-"X-Crowdin-File-ID: 18\n"
-"Project-Id-Version: iwd2ee\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language-Team: French\n"
-"Language: fr_FR\n"
-"PO-Revision-Date: 2024-08-23 18:17\n"
+# Translations for more_persuasion_options
 
 msgctxt "6000"
 msgid "I heard you struck a deal with goblin leader.  Not exactly what Targos is paying you for, is it?"
-msgstr "J’ai entendu dire que vous avez conclu un marché avec le chef gobelin. Ce n’est pas vraiment pour ça que Targos vous paie, n'est-ce pas ?"
+msgstr "J’ai entendu dire que vous avez conclu un marché avec le chef gobelin. Ce n’est pas vraiment pour ça que Targos vous paie, hein ?"
 
 msgctxt "6001"
 msgid "We're paid to protect Targos, and we did it.  What is this place?"
@@ -26,15 +14,15 @@ msgstr "On nous paie pour protéger Targos, et c’est fait. C’est quoi, cet e
 
 msgctxt "6003"
 msgid "Don't question my methods.  I risked my life striking that deal, and now I need supplies."
-msgstr "Ne remettez pas en question mes méthodes. J’ai risqué ma peau pour conclure ce marché, et maintenant j’ai besoin de matériel."
+msgstr "Ne me dites pas comment je dois faire mon travail. J’ai risqué ma peau pour conclure ce marché, et j’ai besoin de matériel."
 
 msgctxt "6004"
 msgid "Each company serves a rotation on the Palisade. Of late, most of our efforts have been focused on constructing the Palisade rather than manning it. On that note, we have a problem. Are you up for a special assignment? Or would you prefer to stick to a simple rotation?"
-msgstr "Chaque compagnie assure un tour de garde sur la Palissade. Dernièrement, nous nous concentrons davantage sur la construction de la Palissade que sur sa défense. A ce sujet, nous avons un problème. Vous êtes prêts pour une mission un peu spéciale ? Ou vous préféreriez vous en tenir à un simple tour de garde ?"
+msgstr "Chaque compagnie a un tour de garde sur la Palissade. On passe le plus clair de notre temps à construire la palissade plutôt qu’à la défendre. A ce sujet, nous avons un problème. Vous êtes prêts pour une mission un peu spéciale ? Ou vous préférez la routine ?"
 
 msgctxt "6005"
 msgid "We're ready to help. What needs to be done?"
-msgstr "Nous sommes prêts à aider. Qu’est-ce qu’il faut faire ?"
+msgstr "Nous sommes prêts à apporter notre aide. Qu’est-ce qu’il faut faire ?"
 
 msgctxt "6006"
 msgid "We're not interested in any special assignments. We'd prefer to take our posts and wait until the goblins strike again."
@@ -46,7 +34,7 @@ msgstr "Bon, très bien. Prenez vos postes et revenez me faire votre rapport dan
 
 msgctxt "6008"
 msgid "I have a better idea. Broken Tusk Clan! Torak has sent *scores* of your brothers to their deaths because he was too afraid to face us himself! Is this the orc you want as your leader?"
-msgstr "J’ai une meilleure idée. Clan de la Défense Brisée ! Torak a envoyé *des dizaines* de vos frères à la mort car il avait trop peur pour nous affronter ! C’est le genre d’orque que vous voulez comme chef ?"
+msgstr "J’ai une meilleure idée. Clan de la Défense Brisée ! Torak a envoyé des vingtaines de vos frères à la mort, car il avait trop peur pour nous affronter ! C’est le genre d’orque que vous voulez comme chef ?"
 
 msgctxt "6009"
 msgid "What? Bro-broken Tusk Clan! Slay them! Slay them all!"
@@ -54,11 +42,11 @@ msgstr "Quoi ? Cl-Clan de la Défense Brisée ! Tuez-les ! Tuez-les tous !"
 
 msgctxt "6010"
 msgid "Whoever wants him gone is no enemy of ours.  We're only here to collect one head.  But whoever wants to defend him is welcome to try!"
-msgstr "Ceux qui veulent se débarrasser de lui sont nos amis. On ne cherche qu’à prendre une tête. Mais ceux qui veulent le défendre, ils peuvent toujours essayer !"
+msgstr "Ceux qui veulent se débarrasser de lui sont nos amis. On ne cherche qu’à lui prendre la tête. Mais ceux qui veulent le défendre, ils peuvent toujours essayer !"
 
 msgctxt "6011"
 msgid "A truce? Interesting... we've finally found someone smart enough not to stand in our way."
-msgstr "Une trêve ? Intéressant... on a finalement trouvé quelqu'un d'assez intelligent pour ne pas se mettre en travers de notre chemin."
+msgstr "Une trêve ? Intéressant... Vous êtes finalement assez intelligents pour ne pas vous mettre en travers de notre chemin."
 
 msgctxt "6012"
 msgid "I propose that we arrange a meeting between Lord Ulbrec and a representative of the Legion. Let us-"
@@ -66,19 +54,19 @@ msgstr "Je propose que nous organisions une rencontre entre le seigneur Ulbrec e
 
 msgctxt "6013"
 msgid "Actually, I have a better idea. Why don't you run while you still have a chance?"
-msgstr "En fait, j’ai une meilleure idée. Pourquoi ne pas prendre la fuite tant que c'est possible ?"
+msgstr "En fait, j’ai une meilleure idée. Pourquoi ne pas prendre la fuite, tant qu’il est encore temps ?"
 
 msgctxt "6014"
 msgid "There's no need for threats. After all, you happen to be surrounded, and-"
-msgstr "Ce n’est pas la peine d'en venir aux menaces. Après tout, vous êtes cernés et-"
+msgstr "Ce n’est pas la peine de nous menacer. Vous êtes cernés et..."
 
 msgctxt "6015"
 msgid "We just slaughtered the entire Broken Tusk Clan and killed everything else in Shaengarne Ford that tried to slow us down. This \"Legion\" is next on the chopping block. You can run and live another day, or we can slice you open and let you hold in your spilling guts while you watch us butcher your companions. It's up to you, Xuki."
-msgstr "Nous venons d’anéantir le Clan de la Défense Brisée et de massacrer tout ce qui essayait de nous ralentir au Gué du Shaengarne. Votre \"Légion\", c’est notre prochaine cible. Vous pouvez vous enfuir pour avoir une chance de vivre un jour de plus, ou nous pouvons vous ouvrir le ventre pour que vous puissiez contempler vos tripes en sortir tout en regardant vos compagnons se faire massacrer. C’est vous qui choisissez, Xuki."
+msgstr "Nous venons d’anéantir le Clan de la Défense Brisée et de massacrer tout ce qui essayait de nous ralentir au Gué du Shaengarne. Votre \"Légion\", c’est notre prochaine cible. Vous pouvez vous enfuir pour avoir une chance de vivre un jour de plus, ou nous pouvons vous ouvrir le ventre pour que vous puissiez vous contempler vous vider de vos tripes tout en regardant vos compagnons se faire massacrer. C’est vous qui choisissez, Xuki."
 
 msgctxt "6016"
 msgid "I... I think my job is done here. I'm sure the Legion can handle this situation without my help."
-msgstr "Je... Je crois que ma tâche est terminée ici. Je suis certain que la Légion peut régler cette situation sans mon aide."
+msgstr "Je... Je crois que ma tâche est terminée, ici. Je suis certain que la Légion peut régler ce problème sans mon aide."
 
 msgctxt "6017"
 msgid "Good choice."
@@ -90,11 +78,11 @@ msgstr "Vous êtes de retour. Comment s’est déroulée la bataille ?"
 
 msgctxt "6019"
 msgid "Oddly enough, we actually managed to strike a deal with Guthma, the leader of the horde."
-msgstr "C’est assez étrange, nous avons pu conclure un marché avec Guthma, le chef de la horde."
+msgstr "C’est assez étrange, mais nous avons pu conclure un marché avec Guthma, le chef de la horde."
 
 msgctxt "6020"
 msgid "Apparently Guthma was unhappy with his clan's allegiance with the greater Legion-or at least, with his apparent superior, a half-dragon woman named Sherincal.  It seems the Legion has been relying on Guthma to do most of the work in attacking Targos, and he resents having his clan bear most of the risks while the Legion contributes little."
-msgstr "Il semblerait que Guthma n’apprécie guère que son clan soit ainsi lié à la Légion... ou du moins à sa supérieur supposée, une femme demi-dragon nommée Sherincal. On dirait que la Légion s’en remet à Guthma pour faire tout le travail en attaquant Targos et que ce dernier n’est pas content de prendre tous les risques avec son clan, alors que la Légion ne fait que regarder."
+msgstr "Il semblerait que Guthma n’apprécie guère que son clan soit ainsi lié à la Légion... ou du moins à une femme demi-dragon nommée Sherincal, son supérieur hiérarchique. On dirait que la Légion s’en remet à Guthma pour attaquer Targos et que ce dernier n’est pas content de prendre tous les risques avec son clan, alors que la Légion ne fait que regarder."
 
 msgctxt "6021"
 msgid "I suppose that's good news, if our enemies are divided."
@@ -118,11 +106,11 @@ msgstr "J’ai bien peur qu’il soit mort."
 
 msgctxt "6026"
 msgid "Oh... I see.  At least... at least he's not dead.  I will wait for him.  Return to the town.  I - I will find my way there soon."
-msgstr "Oh... Je vois. Au moins... au moins il n’est pas mort. Je vais l’attendre. Retournez en ville. Je-je vous rejoindrai bientôt."
+msgstr "Oh... Je vois. Au moins, au moins il n’est pas mort. Je vais l’attendre. Retournez en ville, je vous rejoindrai bientôt."
 
 msgctxt "6027"
 msgid "Oh... this is terrible news.  Return to the town.  I - I will find my way there soon... *sniff*"
-msgstr "Oh... Quelle horrible nouvelle. Retournez en ville. Je-je vous rejoindrai bientôt... *sniff*"
+msgstr "Oh... Quelle horrible nouvelle. Retournez en ville. Je vous rejoindrai bientôt... *sniff*"
 
 msgctxt "6028"
 msgid "A deal? With the horde?"
@@ -138,11 +126,11 @@ msgstr "QUOI ? Qu’est-ce que vous avez entendu ?"
 
 msgctxt "6031"
 msgid "I heard you saying you planned on wiping out the Legion of the Chimera after Targos. That half-dragon woman from the Legion considers herself your superior?"
-msgstr "J’ai entendu que vous comptiez anéantir la Légion de la Chimère après Targos. La femme demi-dragon de la Légion se prend pour votre cheffe, c’est ça ?"
+msgstr "J’ai entendu que vous comptiez anéantir la Légion de la Chimère après Targos. La dragonne se prend pour votre chef, c’est ça ?"
 
 msgctxt "6032"
 msgid "Sherincal dares to give ME orders! I am the leader of this horde! Why shouldn't I destroy them? What does this alliance do for my clan? The Legion makes demands and offers promises, but WE are the ones taking all the risks!"
-msgstr "Sherincal ose ME donner des ordres ! C’est moi le chef de la horde ! Pourquoi ne devrais-je pas les détruire ? Quels bénéfices cette alliance procure-t-elle à mon clan ? La Légion donne des ordres et fait des promesses, mais c’est NOUS qui prenons tous les risques !"
+msgstr "Sherincal ose me donner des ordres ! C’est moi le chef de la horde ! Pourquoi ne devrais-je pas la détruire ? Quels bénéfices ce marché procure-t-il à mon clan ? La Légion donne des ordres et fait des promesses, mais c’est NOUS qui prenons tous les risques !"
 
 msgctxt "6033"
 msgid "Hm. We came here to kill the leader of the Legion. I thought that was you, but apparently Sherincal is our target."
@@ -150,67 +138,67 @@ msgstr "Hum. Nous sommes venus ici pour tuer le chef de la Légion. Je pensais q
 
 msgctxt "6034"
 msgid "It doesn't matter. You snuck past my clan and broke into my chambers. I'll stake your corpse outside the gates!"
-msgstr "Cela n’a aucune importance. Vous avez réussi à infiltrer mon clan et à pénétrer dans mes quartiers. Votre cadavre sera empalé sur un pique devant les portes !"
+msgstr "Cela n’a aucune importance. Vous êtes entrés dans ma forteresse et dans ma chambre ! Vos cadavres seront empalés sur des piques devant le portail !"
 
 msgctxt "6035"
 msgid "Why not just let us hunt down Sherincal? That's all we really came for. It'll save you the trouble of killing her yourself. Besides, we can kill her without affecting your alliance with the Legion. You could weaken the Legion without them even knowing you were responsible."
-msgstr "Pourquoi ne pas nous laisser éliminer Sherincal ? C’est la seule raison de notre présence ici. Ça vous évitera d’avoir à le faire vous-même. Et nous pouvons la tuer sans que votre alliance avec la Légion n’en soit affectée. Ça vous permettrait d’affaiblir la Légion sans qu’elle ne puisse se douter que vous en êtes responsable."
+msgstr "Pourquoi ne pas nous laisser éliminer Sherincal ? C’est la seule raison de notre présence ici. Ça vous évitera d’avoir à le faire vous-même. Et nous pouvons la tuer sans que votre alliance avec la légion n’en soit affectée. Ça vous permettrait d’affaiblir la Légion sans qu’elle ne puisse se douter de qui est responsable."
 
 msgctxt "6036"
 msgid "You invade my fortress and now you're making DEMANDS? I am the LEADER of this army!"
-msgstr "Vous envahissez ma forteresse et maintenant vous osez me donner des DIRECTIVES ? C’est moi le CHEF de cette armée !"
+msgstr "Vous envahissez ma forteresse et vous osez me donner des ordres ? C’est moi le chef de cette armée !"
 
 msgctxt "6037"
 msgid "We already made it all the way here. Obviously we're pretty strong. Would you rather lose men trying to kill us, or have us kill Sherincal for you? Sounds like a good opportunity to me."
-msgstr "Nous sommes déjà arrivés jusqu’ici. Il est évident que nous sommes assez forts. Vous préférez perdre vos troupes en essayant de nous tuer ou nous laisser éliminer Sherincal pour vous ? A mon avis, vous feriez mieux d’accepter notre offre."
+msgstr "Nous sommes déjà arrivés jusqu’ici, vous devriez comprendre que nous ne sommes pas des mauviettes. Vous préférez perdre des hommes en essayant de nous tuer ou nous laisser éliminer Sherincal ? A mon avis, vous feriez mieux d’accepter notre offre."
 
 msgctxt "6038"
 msgid "Hm... We've already suffered many losses because of the Legion. It's about time they paid the same price."
-msgstr "Hmm... On a déjà subi beaucoup de pertes à cause de La Légion. Il est temps d'équilibrer la balance."
+msgstr "Hmm... La Légion nous a déjà coûté cher, il est temps qu’elle en paie le prix."
 
 msgctxt "6039"
 msgid "You know, you could actually take advantage of Sherincal's impatience. She's clearly itching to take responsibility for this entire effort. If she's going to try to control your army, why not tell your men to disobey her commands and set her up for failure?"
-msgstr "Vous savez, vous pourriez profiter de l’impatience de Sherincal. Elle ne rêve que d’une chose, prendre les commandes de l’opération. Si elle essaie de contrôler votre armée, pourquoi ne pas dire à vos hommes de lui désobéir et de la mettre en échec ?"
+msgstr "Vous savez, vous pourriez profiter de l’impatience de Sherincal. Elle ne rêve que d’une chose, prendre les commandes de l’opération. Si elle essaie de contrôler votre armée, pourquoi ne pas dire à vos hommes de lui désobéir et de faire échouer ses plans ? La légion enverra alors ses propres troupes et vous pourrez la détruire lorsqu’elle sera affaiblie par sa lutte contre Targos."
 
 msgctxt "6040"
 msgid "Why are you trying to destroy Targos in the first place? Clearly the Legion is just going to try to sweep in and rake in all of the gains before your army can profit."
-msgstr "Pourquoi essayez-vous de détruire Targos alors ? La Légion va évidemment essayer de ramasser tout ce qu’il est possible de prendre avant que votre armée ne puisse en profiter."
+msgstr "Pourquoi essayez-vous de détruire Targos, alors ? La Légion va évidemment essayer de ramasser tout ce qu’il est possible de prendre avant que votre armée ne puisse en profiter."
 
 msgctxt "6041"
 msgid "What are you talking about?"
-msgstr "Qu'est-ce que vous racontez ?"
+msgstr "Qu’est-ce que vous essayez de dire ?"
 
 msgctxt "6042"
 msgid "The Legion is clearly interested enough in Targos to dedicate its own resources to destroying it. The only reason they've been working with you is because they'd rather risk your army than their own. Let Sherincal take command. Tell your men to sabotage her plans. Then the Legion will send in its own forces, and you can destroy them after they're weakened by the fight with Targos."
-msgstr "La Légion tient à détruire Targos, il est évident qu’elle y consacrera toutes ses ressources. Si elle a collaboré avec vous, c’est uniquement parce qu’elle préfère risquer votre armée que la sienne. Laissez Sherincal prendre les commandes. Dites à vos troupes de saboter ses plans. La Légion enverra ses propres troupes, que vous pourrez détruire après qu’elles auront été affaiblies par leur combat contre Targos."
+msgstr "La Légion tient à prendre le contrôle de Targos, il est évident qu’elle y consacrera toutes ses ressources. Si elle a collaboré avec vous, c’est uniquement parce qu’elle préfère risquer votre armée que la sienne. Laissez Sherincal prendre les commandes. Dites à vos hommes de saboter ses plans. La Légion enverra ses propres troupes, que vous pourrez détruire après qu’elles auront été affaiblies par leurs combats contre Targos."
 
 msgctxt "6043"
 msgid "You're suggesting I let Targos STAND? That I give up all of our progress based on the words of a Targos soldier? You think I don't know what you're doing? I AM NOT SO EASILY FOOLED!"
-msgstr "Vous me dites de laisser Targos DEBOUT ? D’abandonner tous nos efforts en me basant sur les paroles d’un soldat de Targos ? Vous croyez que je ne comprends pas ce que vous faites ? JE NE SUIS PAS SI FACILE À DUPER !"
+msgstr "Vous me dites de laisser Targos debout ? D’abandonner tous nos efforts en me basant sur les paroles d’un soldat de Targos ? Vous me prenez pour un imbécile ? Je ne suis pas si facile à DUPE !"
 
 msgctxt "6044"
 msgid "So be it."
-msgstr "Ainsi soit-il."
+msgstr "Soit !"
 
 msgctxt "6045"
 msgid "And why would you suggest this? You're a soldier of Targos, aren't you?"
-msgstr "Et pourquoi conseilleriez-vous ça ? Vous êtes un soldat de Targos, non ?"
+msgstr "Et pour quelle raison nous le conseilleriez-vous ? Vous n’êtes pas vous-même un soldat de Targos ?"
 
 msgctxt "6046"
 msgid "I'm a mercenary. I only need Targos to stand long enough for me to get paid. By the time the Legion takes Targos, I'll be rich and far away."
-msgstr "Je suis mercenaire. Il suffit que Targos tienne assez longtemps pour que je puisse encaisser ma solde. Le temps que la Légion prenne la ville, je serai riche et bien loin d’ici."
+msgstr "Je suis mercenaire. Il suffit que Targos tienne assez longtemps pour que je puisse encaisser ma solde. Le temps que la légion prenne la ville, je serai riche et bien loin d’ici."
 
 msgctxt "6047"
 msgid "Hah! Very well, mercenary... I'll let the Legion spend its blood and treasure taking Targos. But make no mistake, the city is doomed. Even if they fail, I WILL crush Targos."
-msgstr "Ha ! Très bien, mercenaire... Je vais laisser la Légion se faire saigner à blanc en attaquant Targos. Mais sachez une chose : cette ville est condamnée. Même s’ils échouent, JE VAIS écraser Targos."
+msgstr "Ha ! C’est vrai... Je vais laisser la Légion se faire saigner à blanc en attaquant Targos. Mais sachez une chose : cette ville est condamnée, même s’ils échouent, car JE la détruirai."
 
 msgctxt "6048"
 msgid "That's fine with me. By the way, is there a ranger named Braston here? I was hoping to bring him home."
-msgstr "Cela me convient. Au fait, est-ce qu’un rôdeur du nom de Braston se trouve ici ? J’espérais pouvoir le ramener chez lui."
+msgstr "Cela me convient. Au fait, est-ce qu’un rôdeur du nom de Braston se trouve ici ? J’espérais pouvoir le ramener à Targos."
 
 msgctxt "6049"
 msgid "The ranger? NO! The ranger has been spying on us! We will not let a man with that information leave this place alive."
-msgstr "Le rôdeur ? NON ! C’est un espion qui nous observait ! Je ne laisserai jamais un homme avec cette information quitter cet endroit vivant."
+msgstr "Le rôdeur ? NON ! C’est un espion qui nous observait ! Je ne le laisserai jamais quitter cet endroit vivant !"
 
 msgctxt "6050"
 msgid "If you're going to let the Legion do all the work, Targos doesn't actually need that information anymore. Why would Targos try to attack the fortress when they can save their energy for fighting off the Legion? Besides, I get paid extra if I bring the ranger back alive."
@@ -226,7 +214,7 @@ msgstr "Très bien. J’annoncerai la mauvaise nouvelle à sa femme."
 
 msgctxt "6053"
 msgid "I'm afraid I must insist on bringing him home. His wife is waiting for him."
-msgstr "J'ai peur de devoir insister pour le ramener. Sa femme l’attend."
+msgstr "Je dois absolument le ramener. Sa femme l’attend."
 
 msgctxt "6054"
 msgid "That's not acceptable. I cannot leave without him."
@@ -234,39 +222,39 @@ msgstr "Ce n’est pas possible. Je ne partirai pas sans lui."
 
 msgctxt "6055"
 msgid "Then you're not here for gold! You're here to retrieve a spy, and I WILL NOT ALLOW IT!"
-msgstr "Alors, l’or n’est pas votre seul objectif ! Vous êtes venu sauver un espion et JE NE LE PERMETTRAI PAS !"
+msgstr "Alors, l’or n’est pas votre seul objectif ! Vous êtes venu sauver un espion et je ne le PERMETTRAI PAS !"
 
 msgctxt "6056"
 msgid "I knows who dey is!  Dey's da ones wot smashed up da ice castle!  An dey killed me brudda so's I went ta look for 'em an' got lost and saw da smoke an' foun' da' village an' dat's when I saw you an' then-"
-msgstr "J'sais qui qu'y sont ! C'sont ceux qui ont détruit le château de glace ! Et qu'ont tué mon frangin alors j'suis allé les chercher, j'me suis perdu, j'ai vu la fumée, trouvé le village, et c'est là que j't'ai vu et après-"
+msgstr "Moi je sais qui c’est, Fara ! Moi je sais !"
 
 msgctxt "6057"
 msgid "I knows who dey is!  Dey's da ones wot smashed up da ice castle!  Dey, dey-"
-msgstr "J'sais qui qu'y sont ! C'sont ceux qu'ont démoli le château de glace ! Y, y-"
+msgstr "Oh ! Oh ! Je sais ! Je sais qui c’est ! Demande-moi, demande-moi !"
 
 msgctxt "6058"
 msgid "Dey's lyin', da, da... lyin' liars!  Dey did it, I saws 'em wif me own peepers!"
-msgstr "C'sont des menteurs, ouais, ouais... des menteurs de menteurs ! C'est eux qu'ont fait ça, j'les ai vus avec mes propres mirettes !"
+msgstr "Ils sont menteurs… des menteurs de mensonges ! C’est eux, je les ai vus avec mes yeux à moi !"
 
 msgctxt "6059"
 msgid "Wait!  Don't let her-ack!  Urk... *gurgle*..."
-msgstr "Attends ! Laisse pas... aah ! Urk... *gloups*..."
+msgstr "Attendez… Ne la laissez pas - aïe ! Hum… *glouglou*..."
 
 msgctxt "6060"
 msgid "I think we can make it through the woods.  We have divination magic at our disposal; a few auguries should keep us from getting lost."
-msgstr "Je pense que nous pouvons traverser la forêt. Nous avons la magie de la divination à notre disposition ; quelques augures devraient nous empêcher de nous perdre."
+msgstr "Je pense que nous pouvons traverser les bois. Nous avons la magie de la divination à notre disposition ; quelques augures devraient nous empêcher de nous perdre."
 
 msgctxt "6061"
 msgid "We shouldn't have any trouble making it through the woods.  We have a fair amount of experience traveling through the wilderness."
-msgstr "Nous ne devrions pas avoir de mal à traverser la forêt. Nous avons plutôt l’habitude de voyager dans la nature."
+msgstr "Nous ne devrions pas avoir de mal à traverser les bois. Nous avons l’habitude de voyager dans la nature."
 
 msgctxt "6062"
 msgid "We can probably make it through the woods without getting lost.  I think we can make it out as long as we chart out our progress and stay alert."
-msgstr "On peut probablement traverser la forêt sans nous perdre. Je pense qu'on peut s'en sortir si on surveille notre itinéraire et qu’on fait attention."
+msgstr "Je pense qu’on peut traverser sans nous perdre si on surveille notre itinéraire et qu’on fait attention."
 
 msgctxt "6063"
 msgid "Suoma has already told us how to proceed.  We need to find and destroy the Dark Treants who are hiding the true path."
-msgstr "Suoma nous a déjà expliqué comment faire. Il faut trouver et détruire les Sylvaniens Noirs qui masquent le véritable chemin."
+msgstr "Suoma nous a déjà expliqué comment procéder. Il faut trouver et détruire les sylvaniens noirs qui masquent le véritable chemin."
 
 msgctxt "6064"
 msgid "Be careful then, wanderer.  If you are determined to proceed, then go to the southeast exit of this clearing.  Perhaps you will have more luck than those who became before you."
@@ -290,7 +278,7 @@ msgstr "Combien, exactement ?"
 
 msgctxt "6069"
 msgid "Wait! Wait! I'll do it! I'll break the curse! I'll turn all the children back to normal! Just let me live! I don't want to die! I'll fix everything..."
-msgstr "Attendez ! Attendez ! Je vais le faire ! Je vais briser la malédiction ! Je vais rendre aux enfants leur forme normale ! Épargnez-moi ! Je ne veux pas mourir ! Je vais arranger tout ça..."
+msgstr "Attendez ! Je vais le faire ! Je vais briser le sort ! Je vais rendre aux enfants leur forme normale ! Epargnez-moi ! Je ne veux pas mourir ! Je vais arranger tout ça…"
 
 msgctxt "6070"
 msgid "Your life for theirs. What do you say, adventurer?"
@@ -302,23 +290,23 @@ msgstr "Ce n’est pas possible."
 
 msgctxt "6072"
 msgid "How would I even know you'd hold up your end of the bargain?"
-msgstr "Et qu’est-ce qui me dit que vous respecterez votre part du marché ?"
+msgstr "Et qu’est-ce qui vous garantit que vous respecterez votre part du marché ?"
 
 msgctxt "6073"
 msgid "That's a terrible trade."
-msgstr "C’est inacceptable."
+msgstr "C’est inacceptable !"
 
 msgctxt "6074"
 msgid "I'm a witch of my word. It's up to you. Don't you want to save the village's precious children?"
-msgstr "Je suis une sorcière de parole. C'est à vous de décider. Ne souhaitez-vous pas sauver les précieux enfants du village ?"
+msgstr "J’ai la parole sacrée. C’est à vous de choisir. Ne voulez-vous pas sauver ces pauvres enfants ?"
 
 msgctxt "6075"
 msgid "Not enough to sacrifice my own life."
-msgstr "Pas au point de sacrifier ma propre vie."
+msgstr "Pas au point de me sacrifier pour eux."
 
 msgctxt "6076"
 msgid "I do, but I have many other things to do before I die."
-msgstr "Si, mais j’ai encore beaucoup à faire avant de mourir."
+msgstr "Si, mais j’ai encore beaucoup de choses à faire avant de mourir."
 
 msgctxt "6077"
 msgid "Yes, but I don't believe you'll live up to your end of the bargain."
@@ -326,11 +314,11 @@ msgstr "Oui, mais je ne crois pas que vous tiendrez votre promesse."
 
 msgctxt "6078"
 msgid "Just me, then? My comrade would live?"
-msgstr "Vous ne prendriez que la mienne ? Mon camarade aura la vie sauve ?"
+msgstr "Vous ne prendriez que la mienne ? Mon compagnon aura la vie sauve ?"
 
 msgctxt "6079"
 msgid "Just me, then? My comrades would live?"
-msgstr "Vous ne prendriez que la mienne ? Mes camarades auront la vie sauve ?"
+msgstr "Vous ne prendriez que la mienne ? Mes compagnons auront la vie sauve ?"
 
 msgctxt "6080"
 msgid "I have a better idea. You cure the children and I'll let you live."
@@ -342,23 +330,23 @@ msgstr "Bien sûr. Je n’ai besoin que d’une seule personne. Laissez-moi pré
 
 msgctxt "6082"
 msgid "Actually, no. I don't trust you with my \"life force.\""
-msgstr "En réalité, non. Je ne vous fais pas confiance avec ma \"force vitale\"."
+msgstr "En fait, non. Je ne vous fais pas confiance."
 
 msgctxt "6083"
 msgid "On second thought, no. I'm not giving up my life like that."
-msgstr "Tout bien réfléchi, non. Je ne donnerai pas ma vie comme ça."
+msgstr "Tout bien réfléchi, non. Je ne sacrifierai pas ma vie."
 
 msgctxt "6084"
 msgid "Perform your spell. I'll give my life to save the children."
-msgstr "Allez-y. Je sacrifie ma vie pour sauver les enfants."
+msgstr "Allez-y. Je sacrifie ma vie pour les enfants."
 
 msgctxt "6085"
 msgid "Done! You've made the right decision. Hold still-it shouldn't hurt very much."
-msgstr "Parfait ! Vous avez fait le bon choix. Ne bougez pas... ça ne devrait pas faire trop mal."
+msgstr "C’est fait ! Vous avez fait le bon choix. Ne bougez pas, ça ne devrait pas faire trop mal…"
 
 msgctxt "6086"
 msgid "I hope so."
-msgstr "J’espère."
+msgstr "J’espère…"
 
 msgctxt "6087"
 msgid "There! It's done! All the children are back to normal! They're all safe! I did what I promised! Just let me live! Please!"
@@ -366,27 +354,27 @@ msgstr "Et voilà ! C’est terminé ! Tous les enfants ont retrouvé leur appar
 
 msgctxt "6088"
 msgid "Ha! No!"
-msgstr "Ha ! Non !"
+msgstr "Ha ! Certainement pas !"
 
 msgctxt "6089"
 msgid "Take your life and go, Limha. Leave this place and never return."
-msgstr "Prenez votre vie et partez, Limha. Quittez cet endroit et ne revenez jamais."
+msgstr "Prenez votre vie et partez, Limha. Quittez cet endroit à tout jamais."
 
 msgctxt "6090"
 msgid "You've made the right decision. Now hold still-this is going to hurt a *lot.*"
-msgstr "Vous avez fait le bon choix. Ne bougez pas… ça va vous faire *très* mal."
+msgstr "Vous avez fait le bon choix. Ne bougez pas… ça va vous faire TRÈS mal !"
 
 msgctxt "6091"
 msgid "You will? How generous! But I am far more powerful than you can imagine. I am the *master* of this world."
-msgstr "Vraiment ? Vous êtes bien généreux ! Mais je suis bien plus puissante que vous ne le pensez. Je suis la *maîtresse* de ce monde."
+msgstr "Vraiment ? Vous êtes bien généreux, mais je suis bien plus puissante que vous ne le pensez. Je suis la maîtresse de ce monde, moi !"
 
 msgctxt "6092"
 msgid "What if we paid you to leave? You can take your... activities... elsewhere."
-msgstr "Et si nous payions pour que vous partiez. Vous pourriez reprendre vos... activités... ailleurs."
+msgstr "Nous pourrions vous payer pour que vous partiez. Vous pourriez vous installer ailleurs."
 
 msgctxt "6093"
 msgid "If I did accept your offer, how would I know you'd live up to your end of the bargain?"
-msgstr "Si j'accepte votre offre, qu’est-ce qui me garantit que vous tiendrez votre promesse ?"
+msgstr "Et qu’est-ce qui vous garantit que je tiendrai ma promesse ?"
 
 msgctxt "6094"
 msgid "I gave you a chance, Limha. You didn't listen."
@@ -394,19 +382,19 @@ msgstr "Je vous ai donné une chance, Limha. Vous n’en avez pas profité."
 
 msgctxt "6095"
 msgid "What could you possibly offer me?"
-msgstr "Qu’est-ce que vous pourriez me proposer ?"
+msgstr "Qu’est-ce que vous me proposez ?"
 
 msgctxt "6096"
 msgid "How about 1,000 gold? That should be enough to get you anywhere you want to go."
-msgstr "Que diriez-vous de 1000 pièces d’or ? Ça devrait vous permettre d’aller où bon vous semble."
+msgstr "Mille pièces d’or ? Ça devrait vous permettre d’aller où bon vous semble."
 
 msgctxt "6097"
 msgid "How about 1,000 gold? You could set up shop in the city. There should be plenty of poor beggars and peasants you can toy with that no one will miss."
-msgstr "Que diriez-vous de 1000 pièces d’or ? Vous pourriez monter un commerce en ville. Vous trouveriez là-bas un grand nombre de mendiants et de paysans avec lesquels jouer et qui ne manqueront à personne."
+msgstr "Mille pièces d’or ? Vous pourriez vous installer en ville. Vous trouveriez là un grand nombre de mendiants et de paysans que personne ne regrettera."
 
 msgctxt "6098"
 msgid "Hm... Hm! Now that you mention it, I could do a lot with that. That's a fine price for a batch of minks. Show me the gold and I'll break the curse..."
-msgstr "Hum... Hmm ! Maintenant que vous le dites, oui, ça m’intéresse. C’est un bon prix pour des visons. Montrez-moi l’or et je romprai la malédiction..."
+msgstr "Hum... Hmm ! Maintenant que vous le dites, oui, ça m’intéresse. C’est un bon prix pour des visons. Montrez-moi l’or et je briserai le sort..."
 
 msgctxt "6099"
 msgid "Done! A pleasure doing business with you, adventurers. Perhaps I'll make my way to Neverwinter-this will be so much fun! *Hm-hm-hm!*"
@@ -418,7 +406,7 @@ msgstr "Peut-être viendrai-je vous rendre visite un de ces jours. Au revoir, Li
 
 msgctxt "6101"
 msgid "Is that all? Why should I settle for so little? I *love* my life here."
-msgstr "C’est tout ? Pourquoi devrais-je me ranger pour si peu ? *J’adore* ma vie ici."
+msgstr "C’est tout ? Pourquoi m’arrêter là ? J’adore vivre ici."
 
 msgctxt "6102"
 msgid "Very well, make it 1,500 gold."
@@ -426,7 +414,7 @@ msgstr "Très bien, 1500 pièces d’or, alors."
 
 msgctxt "6103"
 msgid "Oh, you *do* want those children freed, don't you? Let's make it 15,000."
-msgstr "Oh, vous voulez vraiment que ces enfants soient sauvés, n’est-ce pas ? Allons pour 15 000."
+msgstr "Oh, vous voulez vraiment que ces enfants soient sauvés, n’est-ce pas ? Faisons 15 000."
 
 msgctxt "6104"
 msgid "Very well. If that's what it takes to free the children, we'll pay it."
@@ -442,19 +430,19 @@ msgstr "Ce ne sont pas NOS enfants, Limha. Nous voulons juste être en bons term
 
 msgctxt "6107"
 msgid "These aren't *our* children, Limha; we just need to buy some goodwill with Suoma-and that's only worth so much gold. Besides, I can tell from this hut that 1,500 gold is more gold than you've ever possessed in your life. 1,500 is the best deal you're ever going to see."
-msgstr "Ce ne sont pas Nos enfants, Limha; nous voulons juste être en bons termes avec Suoma... et il y a des limites à ce que cela doit nous coûter. D’ailleurs, à en voir cette hutte, je dirais que 1 500 pièces d’or représentent plus que ce que vous n'avez jamais eu dans votre vie. Vous n’aurez pas de meilleure offre."
+msgstr "Ce ne sont pas NOS enfants, Limha. Nous voulons juste être en bons termes avec Suoma, ce qui ne nous est pas vital. D’ailleurs, à voir l’intérieur de cette cabane, je dirais que 1 500 pièces d’or représentent une fortune pour vous. Vous n’aurez pas de meilleure offre."
 
 msgctxt "6108"
 msgid "15,000 gold pieces? I'm not going to stand here and be extorted!"
-msgstr "15 000 pièces d’or ?! Je ne vais pas rester là à me faire extorquer !"
+msgstr "15 000 pièces d’or ?! Vous n’allez tout de même pas me faire chanter comme ça !"
 
 msgctxt "6109"
 msgid "A fair price for a batch of minks, isn't it? Very well, I'll break the curse..."
-msgstr "C’est le juste prix pour quelques visons, non ? Très bien, je vais briser la malédiction..."
+msgstr "C’est le juste prix pour quelques visons, non ? Très bien, je vais briser le sort..."
 
 msgctxt "6110"
 msgid "Fair enough. A fine price for a batch of minks, isn't it? Give me a moment and I'll break the curse..."
-msgstr "Très bien. Un bon prix pour un lot de visons, n’est-ce pas ? Donnez-moi un moment et je briserai la malédiction..."
+msgstr "D’accord. Vous avez raison, c’est un bon prix pour quelques visons. Laissez-moi un instant, et je vais briser le sort..."
 
 msgctxt "6111"
 msgid "Done! A pleasure doing business with you, adventurers. *Hm-hm-hm!*"
@@ -462,7 +450,7 @@ msgstr "Et voilà ! Ce fut un plaisir de faire affaire avec vous. *Hm-hm-hm !*"
 
 msgctxt "6112"
 msgid "Now leave this place, witch. You're not welcome here anymore."
-msgstr "Maintenant quittez cet endroit, sorcière. Vous n’êtes plus la bienvenue ici."
+msgstr "Quittez cet endroit maintenant. Vous n’êtes plus la bienvenue ici."
 
 msgctxt "6113"
 msgid "What?  You're leaving?"
@@ -474,23 +462,23 @@ msgstr "Suoma m’a déjà donné les instructions dont j’avais besoin, et je 
 
 msgctxt "6115"
 msgid "I'm done with the village.  I don't really care what you're doing with the children."
-msgstr "J’en ai fini avec le village. Je me fiche de ce que vous faites avec les enfants."
+msgstr "J’ai fini d’aider le village. Je me moque de ce que vous faites des enfants."
 
 msgctxt "6116"
 msgid "Oh.  That's surprising.  I'll just get rid of this pest, then. *Hm-hm-hm!*"
-msgstr "Oh. C’est surprenant. Je vais donc me débarrasser de ce parasite. *Hm-hm-hm !*"
+msgstr "Oh ? C’est surprenant. Dans ce cas, je vais me débarrasser de cet énergumène ! *Hm-hm-hm !*"
 
 msgctxt "6117"
 msgid "Aid the village?  No, no, no; I'm not here to save any little villages.  I'm just passing through.  I have places to go and things to do."
-msgstr "Aider le village ? Non, non, non ; je ne suis pas ici pour sauver quelques petits villages. Je suis juste de passage. J’ai beaucoup à faire ailleurs."
+msgstr "Aider le village ? Non, je ne suis pas ici pour sauver quelques idiots. Je suis juste de passage. J’ai beaucoup à faire ailleurs."
 
 msgctxt "6118"
 msgid "Wait, we had a deal-we would help you find the children and you would tell us how to get through the Fell Wood."
-msgstr "Attendez, on avait un marché... nous vous aidions à retrouver les enfants et vous nous indiquiez le chemin à travers la Forêt Maudite."
+msgstr "Attendez. On avait un marché : nous vous aidions à retrouver les enfants et vous nous indiquiez le chemin à travers la Forêt Maudite."
 
 msgctxt "6119"
 msgid "Yes... and this is why I wished to speak with you.  If you intend to continue traveling eastwards, you must pass through the haunted Fell Wood.  The trail to the Cold Marshes beyond the forest is difficult to find... in this village, I alone know the way."
-msgstr "Oui... et c’est pour cette raison que je voulais parler avec vous. Si vous avez l’intention de poursuivre votre voyage vers l’est, vous devez traverser la Forêt Maudite. La piste des Marais Froids, au-delà de la forêt, est difficile à trouver... Dans ce village, je suis la seule à connaître le chemin."
+msgstr "Oui... Et c’est pour cette raison que je voulais parler avec vous. Si vous avez l’intention de poursuivre votre voyage vers l’est, vous devez traverser la Forêt Maudite. La piste des Marais Froids, au-delà de la forêt, est difficile à trouver... Dans ce village, je suis la seule à connaître le chemin."
 
 msgctxt "6120"
 msgid "I am certain you are here to help us, whether you knew it or not.  Forgive me, but I cannot give you your answers just yet.  I must ask that you speak with Venla the Healer, first - she will tell you what must be done.  Please help us, and we shall help you in turn."
@@ -498,15 +486,15 @@ msgstr "Je suis certaine que vous êtes ici pour nous aider, que vous en soyez c
 
 msgctxt "6121"
 msgid "I don't think you understood me.  I don't care about your dreams-I'm not running errands for some old barbarian crone.  If you know how to get through these woods, then you will *tell* me how to get through these woods."
-msgstr "Je ne pense pas que vous m'ayez compris. Je me fiche de vos rêves... je ne vais pas faire des courses pour une vieille barbare. Si vous savez comment traverser cette forêt, alors vous allez me *dire* comment traverser cette forêt."
+msgstr "Je pense que vous ne m'avez pas compris. Je me fiche de vos rêves - je ne vais pas faire des courses pour une vieille barbare. Si vous savez comment traverser ces bois, alors vous *allez* me dire comment traverser ces bois."
 
 msgctxt "6122"
 msgid "I don't think you understood me.  I don't care about your visions-I'm not running errands for some old hag.  If you know how to get through these woods, then you will *tell* me how to get through these woods."
-msgstr "Je pense que vous ne m'avez pas compris. Je me fiche de vos visions... je ne vais pas faire des courses pour une vieille sorcière. Si vous savez comment traverser cette forêt, alors vous allez me *dire* comment traverser cette forêt."
+msgstr "Je pense que vous ne m'avez pas compris. Je me fiche de vos visions - je ne vais pas faire des courses pour une vieille sorcière. Si vous savez comment traverser ces bois, alors vous *allez* me dire comment traverser ces bois."
 
 msgctxt "6123"
 msgid "Very well.  I will go speak with Venla."
-msgstr "Très bien. Je vais aller parler à Venla."
+msgstr "Très bien. Je vais parler à Venla."
 
 msgctxt "6124"
 msgid "I see.  I have other questions."
@@ -522,7 +510,7 @@ msgstr "Bon. Puisque vous êtes si têtue, j’irai parler à Venla."
 
 msgctxt "6127"
 msgid "Listen, you barbarian crone-if you don't tell us the way through the woods, you're going to have much bigger problems than a missing bucket or a rabid wolf.  I saw your scrawny band of hunters on the way here, and I don't think any of them is going to stop us if we draw steel on this village.  You can tell us the path through the woods now, or you can tell us when we're carving up your people."
-msgstr "Écoutez-moi, vieille sorcière. Si vous ne nous dites pas comment traverser les bois, vous allez avoir des problèmes bien plus graves qu’un seau disparu ou un loup enragé. J’ai vu votre bande de chasseurs faméliques en venant ici, et je ne pense pas qu’ils pourront nous arrêter si nous dégainons nos armes. Vous pouvez nous dire tout de suite comment traverser les bois ou attendre qu’on massacre tous les habitants du village. C’est vous qui choisissez."
+msgstr "Ecoutez-moi, vieille sorcière. Si vous ne nous dites pas comment traverser les bois, vous allez avoir des problèmes bien plus graves qu’un seau disparu ou un loup enragé. J’ai vu votre bande de chasseurs faméliques en venant ici, et je ne pense pas qu’ils pourront nous arrêter si nous dégainons nos armes. Vous pouvez nous dire tout de suite comment traverser les bois ou attendre qu’on massacre tous les habitants du village. C’est vous qui choisissez."
 
 msgctxt "6128"
 msgid "I... I see.  No, you are not the wanderers I've been expecting.  Very well... if you leave our village in peace, then I will tell you.  There is a certain sort of monster in the Fell Wood, horrific abominations known as dark treants.  It is their warping influence that hides the true path to you.  Destroy them and the way will be clear.  You can find them to the southeast of the first clearing."
@@ -530,11 +518,11 @@ msgstr "Je... Je vois. Non, vous n’êtes pas les voyageurs que j’attendais. 
 
 msgctxt "6129"
 msgid "This had better be the right path.  If I can't get through those woods on your directions, I'm coming back."
-msgstr "J’espère que vous dites la vérité. Si je ne parviens pas à traverser ces bois avec vos indications, je reviendrai ici."
+msgstr "J’espère que vous dites la vérité. Si je ne parviens pas à traverser les bois, je reviendrai ici."
 
 msgctxt "6130"
 msgid "I understand, and we are grateful, but our troubles do not end with the missing children.  We also have a problem with a local wight.  Tahvo the Huntmaster can tell you more."
-msgstr "Je comprends et nous vous en sommes reconnaissants, mais les enfants disparus ne sont pas nos seuls problèmes. Un spectre de tumulus nous cause du souci. Allez parler à Tahvo, le maître-chasseur, il vous en dira davantage."
+msgstr "Je comprends et je vous en suis reconnaissante, mais il ne s’agit pas de notre seul problème. Un spectre de tumulus nous cause du souci. Allez parler à Tahvo, le maître-chasseur, il vous en dira davantage."
 
 msgctxt "6131"
 msgid "Suoma, your village isn't my only priority here.  I am needed elsewhere.  I need you to tell me how to get through the Fell Woods."
@@ -542,7 +530,7 @@ msgstr "Suoma, votre village n’est pas ma seule priorité. J’ai des tâches 
 
 msgctxt "6132"
 msgid "I saved your children; is information too great a reward for such a deed? Your greatest problem is solved. Surely your village can figure out how to solve the smaller problems."
-msgstr "Nous avons sauvé vos enfants ; une information est-elle une récompense trop élevée ? Votre plus grand problème est résolu. Votre village devrait pouvoir résoudre les problèmes mineurs."
+msgstr "Nous avons sauvé vos enfants, une information est-elle une récompense trop élevée ? Votre plus grand problème est résolu. Votre village devrait pouvoir résoudre les problèmes mineurs."
 
 msgctxt "6133"
 msgid "Very well.  If your village still needs help, I'll go speak with this Tahvo."
@@ -550,15 +538,15 @@ msgstr "Très bien. Si le village a encore besoin de nous, j’irai parler à ce
 
 msgctxt "6134"
 msgid "I know you have other places to go, but first you are needed here.  Please... we do not have anywhere else to turn."
-msgstr "Je sais que vous devez aller ailleurs, mais nous avons besoin de vous ici. Je vous en prie… Nous ne savons vers qui nous tourner. "
+msgstr "Je sais que vous devez aller ailleurs, mais nous avons besoin de vous ici. Je vous en prie… Nous ne savons vers qui nous tourner."
 
 msgctxt "6135"
 msgid "Look, I would love to help, but we simply don't have any more time to waste.  I mean no offense, but we have higher priorities than the needs of just one village.  We have all of Icewind Dale to worry about."
-msgstr "Écoutez, nous aimerions bien vous aider mais nous n’avons vraiment pas de temps à perdre. Sans vouloir vous offenser, nous avons des priorités qui vont bien au-delà des besoins d’un seul village. C’est tout le Val de Bise qui est menacé."
+msgstr "Ecoutez, nous aimerions bien vous aider mais nous n’avons vraiment pas de temps à perdre. Sans vouloir vous offenser, nous avons des priorités qui vont bien au-delà des besoins d’un seul village. C’est tout le Val de Bise qui est menacé."
 
 msgctxt "6136"
 msgid "Then you're out of luck.  I'd rather take my chances in the woods than run errands all day.  I'm not going to stay here and wait for you to live up to your end of the bargain."
-msgstr "Alors vous n’avez pas de chance. Je préfère tenter ma chance dans la forêt que faire vos courses toute la journée. Je ne vais pas rester ici à attendre que vous teniez votre promesse."
+msgstr "Alors vous n’avez pas de chance, car je préfère tenter ma chance dans la forêt que faire vos courses toute la journée. Je ne vais pas rester ici à attendre que vous teniez votre promesse."
 
 msgctxt "6137"
 msgid "Fine.  If it's really necessary, I'll go ask Tahvo about this wight."
@@ -606,19 +594,19 @@ msgstr "Assez étrange, tout de même…"
 
 msgctxt "6148"
 msgid "Shut up, you lumbering cretin. Is this true, adventurer? Has the glacier fallen?"
-msgstr "Tais-toi, espèce de crétin maladroit. Est-ce vrai, aventurier ? Le glacier est-il tombé ?"
+msgstr "Tais-toi, crétin ! Vous qui êtes arrivés, le glacier s’est effondré, c’est vrai ?"
 
 msgctxt "6149"
 msgid "Wait, wait! We're not responsible for the glacier falling!"
-msgstr "Attendez, attendez ! Nous ne sommes pas responsables de l’effondrement du glacier !"
+msgstr "Attendez, nous ne sommes pas responsables de l’effondrement du glacier !"
 
 msgctxt "6150"
 msgid "I heard you, Brogrob. You need not tell me twice."
-msgstr "J’ai entendu, Brogrob. Ce n’est pas la peine de le répéter."
+msgstr "J’ai entendu, Brogrob ! Ce n’est pas la peine de le répéter !"
 
 msgctxt "6151"
 msgid "Your giant is confusing us with our employers.  We're just here to carry supplies and cook meals and clean.  The heroes of Targos hired us to help them get through the Western pass."
-msgstr "Votre géant nous a confondus avec nos patrons. On est juste là pour porter les bagages, faire la cuisine et le ménage. Ce sont les héros de Targos qui nous ont engagés pour les aider à atteindre la Passe Occidentale."
+msgstr "Votre géante nous a confondus avec nos patrons. On est juste là pour porter les bagages, faire la cuisine et faire le ménage. Ce sont les héros de Targos qui nous ont engagés pour les aider à atteindre la Passe Occidentale."
 
 msgctxt "6152"
 msgid "The \"heroes of Targos?\""
@@ -1651,455 +1639,364 @@ msgstr "Les héros sont de retour ! Targos est sauvée !"
 msgctxt "6409"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6410"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6411"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6412"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6413"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6414"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6415"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6416"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6417"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6418"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6419"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6420"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6421"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6422"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6423"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6424"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6425"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6426"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6427"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6428"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6429"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6430"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6431"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6432"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6433"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6434"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6435"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6436"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6437"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6438"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6439"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6440"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6441"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6442"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6443"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6444"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6445"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6446"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6447"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6448"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6449"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6450"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6451"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6452"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6453"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6454"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6455"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6456"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6457"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6458"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6459"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6460"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6461"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6462"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6463"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6464"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6465"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6466"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6467"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6468"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6469"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6470"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6471"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6472"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6473"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6474"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6475"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6476"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6477"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6478"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6479"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6480"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6481"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6482"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6483"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6484"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6485"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6486"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6487"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6488"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6489"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6490"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6491"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6492"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6493"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6494"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6495"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6496"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6497"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6498"
 msgid ""
 msgstr ""
-""
 
 msgctxt "6499"
 msgid ""
 msgstr ""
-""
 

@@ -2,6 +2,7 @@ import os
 import re
 import sys
 import chardet
+import json
 
 def escape_quotes(text):
     """Escape double quotes in the text."""
@@ -26,36 +27,13 @@ def parse_tra_file(file_path, encoding="utf-8"):
         print(f"Error: Unable to decode file {file_path} with encoding {encoding}")
     return tra_translations
 
-def parse_po_file(file_path, encoding="utf-8"):
-    """Parses a .po file and returns a dictionary with the msgctxt as key and msgstr as value."""
-    po_translations = {}
-    try:
-        with open(file_path, "r", encoding=encoding) as file:
-            # Read the entire file content
-            file_content = file.read()
-
-            # Match all msgctxt and msgstr lines using regex
-            matches = re.findall(r'msgctxt "(.*?)"\s*msgid "(.*?)"\s*msgstr "(.*?)(?<!\\)"', file_content, re.DOTALL)
-            for match in matches:
-                current_key = match[0]
-                # Unescape double quotes
-                msgstr = match[2].replace('\\"', '"').strip()
-                po_translations[current_key] = msgstr
-
-    except FileNotFoundError:
-        print(f"Error: File not found: {file_path}")
-    except UnicodeDecodeError:
-        print(f"Error: Unable to decode file {file_path} with encoding {encoding}")
-
-    return po_translations
-
-def tra_to_po(base_name):
-    """Converts a .tra file to a .po file."""
+def tra_to_json(base_name):
+    """Converts a .tra file to a JSON file."""
     # Define paths
     english_file_path = os.path.join("English", f"{base_name}.tra")
     french_file_path = os.path.join("French", f"{base_name}.tra")
-    # Save to Finished_po directory
-    po_file_path = os.path.join("Finished_po", f"{base_name}.po")
+    # Save to Finished_json directory
+    json_file_path = os.path.join("Finished_json", f"{base_name}.json")
 
     # Detect and convert French file encoding if needed
     try:
@@ -79,47 +57,42 @@ def tra_to_po(base_name):
     english_translations = parse_tra_file(english_file_path)
     french_translations = parse_tra_file(french_file_path, encoding="utf-8")
 
-    # Create the .po file
+    # Create the JSON file
     try:
-        with open(po_file_path, "w", encoding="utf-8") as po_file:
-            po_file.write("# Translations for " + base_name + "\n\n")
+        translations = {}
+        for key, english_text in english_translations.items():
+            french_text = french_translations.get(key, "")
+            translations[key] = {english_text: french_text}
 
-            # Iterate over English translations
-            for key, english_text in english_translations.items():
-                french_text = french_translations.get(key, "")
+        with open(json_file_path, "w", encoding="utf-8") as json_file:
+            # This line is updated to not escape ASCII characters
+            json.dump(translations, json_file, indent=4, ensure_ascii=False) 
 
-                po_file.write(f'msgctxt "{key}"\n')
-                po_file.write(f'msgid "{english_text}"\n')
-                po_file.write(f'msgstr "{french_text}"\n\n')
     except FileNotFoundError:
-        print(f"Error: Could not create .po file: {po_file_path}")
+        print(f"Error: Could not create .json file: {json_file_path}")
         return
     except UnicodeEncodeError:
-        print(f"Error: Unable to write to .po file: {po_file_path}")
+        print(f"Error: Unable to write to .json file: {json_file_path}")
         return
 
-    print(f"Conversion to {po_file_path} completed successfully.")
+    print(f"Conversion to {json_file_path} completed successfully.")
 
-def po_to_tra(base_name):
-    """Converts a .po file to a .tra file."""
+def json_to_tra(base_name):
+    """Converts a JSON file to a .tra file."""
     # Define paths
-    po_file_path = os.path.join("Finished_po", f"{base_name}.po")
+    json_file_path = os.path.join("Finished_json", f"{base_name}.json")
     output_file = os.path.join("Finished_tra", f"{base_name}.tra")
 
-    # Parse .po file
-    po_translations = parse_po_file(po_file_path)
-
-    # Check if po_translations is empty (file not found or other error)
-    if not po_translations:
-        print(f"Error: .po file not found or empty: {po_file_path}")
-        return
-
-    # Create the .tra file (UTF-8 encoding by default)
     try:
+        with open(json_file_path, "r", encoding="utf-8") as json_file:
+            translations = json.load(json_file)
+
+        # Create the .tra file (UTF-8 encoding by default)
         with open(output_file, "w", encoding="utf-8") as tra_file:
-            for key, french_text in po_translations.items():
+            for key, value in translations.items():
                 # Write each entry to the .tra file
-                tra_file.write(f"@{key} = ~{french_text}~\n")
+                # Access the French text correctly (no need for 'french' key)
+                tra_file.write(f"@{key} = ~{value}~\n")  
 
         # Convert the .tra file content to Windows-1252 encoding
         with open(output_file, "r", encoding="utf-8") as tra_file:
@@ -128,7 +101,10 @@ def po_to_tra(base_name):
             tra_file.write(french_content)
 
     except FileNotFoundError:
-        print(f"Error: Could not create .tra file: {output_file}")
+        print(f"Error: Could not find .json file: {json_file_path}")
+        return
+    except json.JSONDecodeError:
+        print(f"Error: Invalid JSON format in file: {json_file_path}")
         return
     except UnicodeEncodeError:
         print(f"Error: Unable to write to .tra file: {output_file}")
@@ -137,11 +113,15 @@ def po_to_tra(base_name):
     print(f"Conversion to {output_file} completed successfully.")
 
     # Display index ranges
+    display_index_ranges(translations)  # Pass the translations dictionary
+
+def display_index_ranges(translations):
+    """Display index ranges from the translations."""
     index_ranges = []
     current_range_start = None
     previous_key = None
 
-    for key in sorted(int(k) for k in po_translations.keys()):
+    for key in sorted(int(k) for k in translations.keys()):
         if current_range_start is None:
             # Start of a new range
             current_range_start = key
@@ -168,28 +148,27 @@ def po_to_tra(base_name):
     for range_str in index_ranges:
         print(range_str)
 
-
 # -----------------------------------------------------------------------------
 # Main function
 # -----------------------------------------------------------------------------
 def main():
     if len(sys.argv) != 3:
         print("Usage:")
-        print("  python convert.py tra_to_po <base_name>")
-        print("  python convert.py po_to_tra <base_name>")
+        print("  python convert.py tra_to_json <base_name>")
+        print("  python convert.py json_to_tra <base_name>")
         sys.exit(1)
 
     command = sys.argv[1]
     base_name = sys.argv[2]
 
     # Create directories if they don't exist
-    os.makedirs("Finished_po", exist_ok=True)
+    os.makedirs("Finished_json", exist_ok=True)
     os.makedirs("Finished_tra", exist_ok=True)
 
-    if command == "tra_to_po":
-        tra_to_po(base_name)
-    elif command == "po_to_tra":
-        po_to_tra(base_name)
+    if command == "tra_to_json":
+        tra_to_json(base_name)
+    elif command == "json_to_tra":
+        json_to_tra(base_name)
     else:
         print(f"Unknown command: {command}")
         sys.exit(1)

@@ -6,84 +6,6 @@ import json
 import codecs
 
 
-def display_index_ranges(file_path):
-    """Display index ranges from a .tra file."""
-    index_ranges = []
-    current_range_start = None
-    previous_key = None
-    empty_ranges = []  # Nouvelle liste pour les plages d'index vides
-    current_empty_range_start = None
-
-    encoding = "windows-1252"  # Default encoding
-    if "English" in file_path:
-        encoding = "utf-8"
-
-    try:
-        with open(file_path, "r", encoding=encoding) as tra_file:
-            file_content = tra_file.read()
-            matches = re.findall(r"@(\d+)\s*=\s*~(.*?)~", file_content, re.DOTALL)
-
-            for match in matches:
-                key = int(match[0])
-
-                # Vérification si le texte entre les ~ est vide
-                if match[1].strip() == "":
-                    if current_empty_range_start is None:
-                        current_empty_range_start = key
-                    elif previous_key is not None and key != previous_key + 1:
-                        if current_empty_range_start == previous_key:
-                            empty_ranges.append(f"{current_empty_range_start}")
-                        else:
-                            empty_ranges.append(
-                                f"{current_empty_range_start}-{previous_key}"
-                            )
-                        current_empty_range_start = key
-                    previous_key = key
-                else:
-                    # Si on rencontre un index non vide, on met à jour les ranges non vides
-                    if current_range_start is None:
-                        current_range_start = key
-                    elif previous_key is not None and key != previous_key + 1:
-                        if current_range_start == previous_key:
-                            index_ranges.append(f"{current_range_start}")
-                        else:
-                            index_ranges.append(f"{current_range_start}-{previous_key}")
-                        current_range_start = key
-                    previous_key = key
-
-                    # Si on rencontre un index non vide, on reset le range vide
-                    current_empty_range_start = None
-
-        # Add the last range
-        if current_range_start is not None:
-            if current_range_start == previous_key:
-                index_ranges.append(f"{current_range_start}")
-            else:
-                index_ranges.append(f"{current_range_start}-{previous_key}")
-
-        # Add the last empty range
-        if current_empty_range_start is not None:
-            if current_empty_range_start == previous_key:
-                empty_ranges.append(f"{current_empty_range_start}")
-            else:
-                empty_ranges.append(f"{current_empty_range_start}-{previous_key}")
-
-        # Display index ranges
-        print("\nIndex ranges:")
-        for range_str in index_ranges:
-            print(range_str)
-
-        # Display empty index ranges
-        if empty_ranges:
-            print("\nIndex ranges with empty translations:")
-            for range_str in empty_ranges:
-                print(range_str)
-
-    except FileNotFoundError:
-        print(f"Error: Could not find .tra file: {file_path}")
-        return
-
-
 def parse_tra_file(file_path, encoding="utf-8"):
     """Parses a .tra file and returns a dictionary with the index as key
     and the text as value."""
@@ -172,6 +94,7 @@ def json_to_tra(base_name):
     """Converts a JSON file to a .tra file."""
     # Define paths
     json_file_path = os.path.join("Finished_json", f"{base_name}.json")
+    english_file_path = os.path.join("English", f"{base_name}.tra")
     output_file = os.path.join("Finished_tra", f"{base_name}.tra")
 
     try:
@@ -217,14 +140,113 @@ def json_to_tra(base_name):
     print(f"Conversion to {output_file} completed successfully.")
 
     # Display index ranges
-    english_file_path = os.path.join("English", f"{base_name}.tra")
-    french_file_path = os.path.join("Finished_tra", f"{base_name}.tra")
-
-    print(f"\nEnglish file ({english_file_path}):")
+    print("\nEnglish file index ranges:")
     display_index_ranges(english_file_path)
+    print("\nTranslated file index ranges:")
+    display_index_ranges(output_file)  # Pass the output_file path
 
-    print(f"\nFrench file ({french_file_path}):")
-    display_index_ranges(french_file_path)
+
+def display_index_ranges(file_path):
+    """Display index ranges from a .tra file and returns the ranges."""
+    index_ranges = []
+    current_range_start = None
+    previous_key = None
+    empty_ranges = []  # Nouvelle liste pour les plages d'index vides
+    current_empty_range_start = None
+
+    encoding = "windows-1252"  # Default encoding
+    if "English" in file_path:
+        encoding = "utf-8"
+
+    try:
+        with open(file_path, "r", encoding=encoding) as tra_file:
+            file_content = tra_file.read()
+            matches = re.findall(r"@(\d+)\s*=\s*~(.*?)~", file_content, re.DOTALL)
+
+            for match in matches:
+                key = int(match[0])
+
+                # Vérification si le texte entre les ~ est vide
+                if match[1].strip() == "":
+                    if current_empty_range_start is None:
+                        current_empty_range_start = key
+                    elif previous_key is not None and key != previous_key + 1:
+                        if current_empty_range_start == previous_key:
+                            empty_ranges.append(f"{current_empty_range_start}")
+                        else:
+                            empty_ranges.append(
+                                f"{current_empty_range_start}-{previous_key}"
+                            )
+                        current_empty_range_start = key
+                    previous_key = key
+                else:
+                    # Si on rencontre un index non vide, on met à jour les ranges non vides
+                    if current_range_start is None:
+                        current_range_start = key
+                    elif previous_key is not None and key != previous_key + 1:
+                        if current_range_start == previous_key:
+                            index_ranges.append(f"{current_range_start}")
+                        else:
+                            index_ranges.append(f"{current_range_start}-{previous_key}")
+                        current_range_start = key
+                    previous_key = key
+
+                    # Si on rencontre un index non vide, on reset le range vide
+                    current_empty_range_start = None
+
+        # Add the last range
+        if current_range_start is not None:
+            if current_range_start == previous_key:
+                index_ranges.append(f"{current_range_start}")
+            else:
+                index_ranges.append(f"{current_range_start}-{previous_key}")
+
+        # Add the last empty range
+        if current_empty_range_start is not None:
+            if current_empty_range_start == previous_key:
+                empty_ranges.append(f"{current_empty_range_start}")
+            else:
+                empty_ranges.append(f"{current_empty_range_start}-{previous_key}")
+
+        # Display index ranges
+        for range_str in index_ranges:
+            print(range_str)
+
+        # Display empty index ranges
+        if empty_ranges:
+            print("Index ranges with empty translations:")
+            for range_str in empty_ranges:
+                print(range_str)
+            
+    except FileNotFoundError:
+        print(f"Error: Could not find .tra file: {file_path}")
+        return
+
+    return index_ranges
+
+
+def compare_index_ranges(file_path1, file_path2):
+    """Compares index ranges from two .tra files."""
+    ranges1 = display_index_ranges(file_path1)
+    ranges2 = display_index_ranges(file_path2)
+
+    # Check for missing ranges in file2 compared to file1
+    missing_ranges = [range_str for range_str in ranges1 if range_str not in ranges2]
+    if missing_ranges:
+        print(f"\nMissing index ranges in {file_path2} compared to {file_path1}:")
+        for range_str in missing_ranges:
+            print(range_str)
+    else:
+        print(f"\nNo missing index ranges in {file_path2} compared to {file_path1}")
+
+    # Check for extra ranges in file2 compared to file1
+    extra_ranges = [range_str for range_str in ranges2 if range_str not in ranges1]
+    if extra_ranges:
+        print(f"\nExtra index ranges in {file_path2} compared to {file_path1}:")
+        for range_str in extra_ranges:
+            print(range_str)
+    else:
+        print(f"\nNo extra index ranges in {file_path2} compared to {file_path1}")
 
 
 # -----------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 // turn into one of the associated words in-game.
 // This is only important in situations where the gender of the subject is not already set.
 
-@4800   = ~Invocation d’Aocha~
+@4800   = ~Invocation d'Aocha~
 @4801   = ~Reformer le groupe~
 @4802   = ~Alliance de Veira~
 @4803   = ~Cette alliance est la seule partie de Veira qui reste vraiment tangible. Liée à la mort comme à la vie, elle ne quitte jamais son doigt.

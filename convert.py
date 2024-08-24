@@ -3,10 +3,7 @@ import re
 import sys
 import chardet
 import json
-
-def escape_quotes(text):
-    """Escape double quotes in the text."""
-    return text.replace('"', r"\"")
+import codecs
 
 def parse_tra_file(file_path, encoding="utf-8"):
     """Parses a .tra file and returns a dictionary with the index as key
@@ -20,11 +17,15 @@ def parse_tra_file(file_path, encoding="utf-8"):
             # Match all index lines and their text
             matches = re.findall(r"@(\d+)\s*=\s*~(.*?)~", file_content, re.DOTALL)
             for match in matches:
-                tra_translations[match[0]] = escape_quotes(match[1])
+                tra_translations[match[0]] = match[1]
     except FileNotFoundError:
         print(f"Error: File not found: {file_path}")
     except UnicodeDecodeError:
-        print(f"Error: Unable to decode file {file_path} with encoding {encoding}")
+        # Get the detected encoding
+        with open(file_path, "rb") as file:
+            detected_encoding = chardet.detect(file.read())["encoding"]
+        print(f"Error: Unable to decode file {file_path} with encoding {encoding}. "
+              f"Detected encoding is: {detected_encoding}")
     return tra_translations
 
 def tra_to_json(base_name):
@@ -42,9 +43,9 @@ def tra_to_json(base_name):
             encoding = chardet.detect(french_content)["encoding"]
             if encoding != "utf-8":
                 print(f"Converting {french_file_path} from {encoding} to UTF-8...")
-                with open(french_file_path, "r", encoding=encoding) as french_file:
+                with codecs.open(french_file_path, "r", encoding=encoding) as french_file:
                     french_content = french_file.read()
-                with open(french_file_path, "w", encoding="utf-8") as french_file:
+                with codecs.open(french_file_path, "w", encoding="utf-8") as french_file:
                     french_file.write(french_content)
     except FileNotFoundError:
         print(f"Error: French file not found: {french_file_path}")
@@ -55,6 +56,7 @@ def tra_to_json(base_name):
 
     # Parse .tra files
     english_translations = parse_tra_file(english_file_path)
+    # Now parse the French file with utf-8 encoding
     french_translations = parse_tra_file(french_file_path, encoding="utf-8")
 
     # Create the JSON file
@@ -62,10 +64,12 @@ def tra_to_json(base_name):
         translations = {}
         for key, english_text in english_translations.items():
             french_text = french_translations.get(key, "")
+            # Replace single quotes with apostrophes in French text
+            french_text = french_text.replace("'", "’")
+            # Restore the correct structure of the dictionary
             translations[key] = {english_text: french_text}
 
         with open(json_file_path, "w", encoding="utf-8") as json_file:
-            # This line is updated to not escape ASCII characters
             json.dump(translations, json_file, indent=4, ensure_ascii=False) 
 
     except FileNotFoundError:
@@ -90,9 +94,16 @@ def json_to_tra(base_name):
         # Create the .tra file (UTF-8 encoding by default)
         with open(output_file, "w", encoding="utf-8") as tra_file:
             for key, value in translations.items():
-                # Write each entry to the .tra file
-                # Access the French text correctly (no need for 'french' key)
-                tra_file.write(f"@{key} = ~{value}~\n")  
+                # Extract the French text using a regex
+                match = re.search(r": '(.*?)'", str(value))
+                if match:
+                    french_text = match.group(1)
+                    # Replace escaped characters with actual characters
+                    french_text = french_text.replace('\\n', '\n').replace('\\t', '\t').replace('\\xa0', ' ')
+                    # Write each entry to the .tra file
+                    tra_file.write(f"@{key} = ~{french_text}~\n")  
+                else:
+                    print(f"Warning: Could not find French text for index {key} in {json_file_path}")
 
         # Convert the .tra file content to Windows-1252 encoding
         with open(output_file, "r", encoding="utf-8") as tra_file:

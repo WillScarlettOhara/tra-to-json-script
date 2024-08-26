@@ -98,8 +98,15 @@ def json_to_tra(base_name):
     output_file = os.path.join("Finished_tra", f"{base_name}.tra")
 
     try:
+        # Load the JSON file and replace single quotes with apostrophes
         with open(json_file_path, "r", encoding="utf-8") as json_file:
             translations = json.load(json_file)
+
+            # Replace single quotes with apostrophes in French text
+            for key, value in translations.items():
+                french_text = list(value.values())[0]  # Get the French text value
+                french_text = french_text.replace("'", "’")  # Replace single quotes
+                value[list(value.keys())[0]] = french_text  # Update the value in the dictionary
 
         # Create the .tra file (UTF-8 encoding by default)
         with open(output_file, "w", encoding="utf-8") as tra_file:
